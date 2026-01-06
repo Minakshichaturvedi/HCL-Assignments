@@ -1,0 +1,39 @@
+Travel Booking Platform
+Test Case: Verify Flight Search
+
+Field             Description
+Test Case Id      TC_TRAVEL_01
+Test Case Title   Verify flight search returns results
+Module Name       Flight Search
+Precondition      User logged in; Flight search screen accessible
+Test Steps        1. Open flight search screen
+                  2. Enter Source city
+                  3. Enter Destination city
+                  4. Enter Date
+                  5. Click Search
+Test Data         Source = "Delhi"
+                  Destination = "Mumbai"
+                  Date = "10-Jan-2026"
+Expected Result   System should display available flights
+Actual Result     Flight list displayed
+Status            Pass / Fail
+Remarks           Ensure search works for valid inputs
+
+
+Test Case: verify booking confirmation
+
+Field             Description
+Test Case Id      TC_TRAVEL_02
+Test Case Title   Verify booking confirmation after payment
+Module Name       Booking Module
+Precondition      User logged in; Flight selected
+Test Steps        1. Select flight
+                  2. Enter passenger details
+                  3. Enter payment details
+                  4. Confirm booking
+Test Data         Passenger Name = "Minakshi"
+                  Card Number = "4111111111111111"
+Expected Result   Booking confirmation should be displayed
+Actual Result     Confirmation displayed
+Status            Pass / Fail
+Remarks           Ensure payment gateway integration works

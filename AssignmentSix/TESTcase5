@@ -1,0 +1,36 @@
+Healthcare System
+Test Case: Verify Patient Registration
+
+Field             Description
+Test Case Id      TC_HEALTH_01
+Test Case Title   Verify new patient record can be added
+Module Name       Patient Module
+Precondition      User logged in; Patient module accessible
+Test Steps        1. Navigate to Add Patient
+                  2. Enter patient details
+                  3. Click Save
+Test Data         Patient Name = "Rahul Sharma"
+                  Patient ID = "PAT001"
+Expected Result   Patient record should be created successfully
+Actual Result     Patient record created
+Status            Pass / Fail
+Remarks           Ensure unique Patient ID is enforced
+
+Test Case: Verify Appointment Booking
+
+
+Field             Description
+Test Case Id      TC_HEALTH_02
+Test Case Title   Verify appointment booking works
+Module Name       Appointment Module
+Precondition      Patient record exists; Doctor available
+Test Steps        1. Navigate to Book Appointment
+                  2. Select doctor
+                  3. Select date/time
+                  4. Confirm booking
+Test Data         Doctor = "Dr. Mehta"
+                  Date = "12-Jan-2026"
+Expected Result   Appointment confirmation should be displayed
+Actual Result     Appointment confirmed
+Status            Pass / Fail
+Remarks           Ensure appointment ID is generated

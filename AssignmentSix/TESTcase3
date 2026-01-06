@@ -1,0 +1,35 @@
+Online E‑Commerce Website
+Test Case: Verify Add Product to Cart
+
+Field             Description
+Test Case Id      TC_ECOMM_01
+Test Case Title   Verify product can be added to cart
+Module Name       Cart Module
+Precondition      User logged in; Product exists
+Test Steps        1. Search product
+                  2. Select product
+                  3. Click Add to Cart
+Test Data         Product Name = "Laptop"
+Expected Result   Product should be added to cart
+Actual Result     Product added
+Status            Pass / Fail
+Remarks           Ensure cart updates correctly
+
+Test Case: Verify Checkout Process
+
+Field             Description
+Test Case Id      TC_ECOMM_02
+Test Case Title   Verify checkout completes successfully
+Module Name       Checkout Module
+Precondition      Cart has items; User logged in
+Test Steps        1. Navigate to cart
+                  2. Click Checkout
+                  3. Enter shipping details
+                  4. Enter payment details
+                  5. Confirm order
+Test Data         Address = "Bhopal, MP"
+                  Card Number = "4111111111111111"
+Expected Result   Order confirmation should be displayed
+Actual Result     Order confirmed
+Status            Pass / Fail
+Remarks           Ensure order ID is generated

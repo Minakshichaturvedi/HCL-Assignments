@@ -1,0 +1,35 @@
+Customer Relationship Management 
+Test Case: Verify Add Customer Record
+
+
+Field             Description
+Test Case Id      TC_CRM_01
+Test Case Title   Verify new customer record can be added
+Module Name       Customer Module
+Precondition      User logged in; Customer module accessible
+Test Steps        1. Navigate to Add Customer screen
+                  2. Enter customer details
+                  3. Click Save
+Test Data         Customer Name = "John Doe"
+                  Customer ID = "CUST001"
+                  Phone = "9876543210"
+Expected Result   Customer record should be created successfully
+Actual Result     Customer record created
+Status            Pass / Fail
+Remarks           Ensure unique Customer ID is enforced
+
+Test Case: Verify Search Customer
+
+Field             Description
+Test Case Id      TC_CRM_02
+Test Case Title   Verify search by customer ID
+Module Name       Customer Module
+Precondition      Customer record exists
+Test Steps        1. Navigate to Search Customer
+                  2. Enter Customer ID
+                  3. Click Search
+Test Data         Customer ID = "CUST001"
+Expected Result   Customer details should be displayed
+Actual Result     Customer details displayed
+Status            Pass / Fail
+Remarks           Ensure search works for valid IDs

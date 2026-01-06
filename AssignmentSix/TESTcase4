@@ -1,0 +1,37 @@
+Automated Banking Website
+Test Case: Verify Fund Transfer
+
+Field             Description
+Test Case Id      TC_BANK_01
+Test Case Title   Verify fund transfer between accounts
+Module Name       Fund Transfer Module
+Precondition      User logged in; Account has sufficient balance
+Test Steps        1. Navigate to Fund Transfer
+                  2. Enter recipient account number
+                  3. Enter amount
+                  4. Click Transfer
+Test Data         Recipient = "ACC12345"
+                  Amount = 5000
+Expected Result   Transfer should succeed; Balance updated
+Actual Result     Transfer successful
+Status            Pass / Fail
+Remarks           Ensure transaction ID is generated
+
+
+Test Case: Verify Invalid Transfer
+
+Field             Description
+Test Case Id      TC_BANK_02
+Test Case Title   Verify transfer fails when balance is insufficient
+Module Name       Fund Transfer Module
+Precondition      User logged in; Account balance < transfer amount
+Test Steps        1. Navigate to Fund Transfer
+                  2. Enter recipient account number
+                  3. Enter large amount
+                  4. Click Transfer
+Test Data         Recipient = "ACC12345"
+                  Amount = 100000
+Expected Result   Transfer should fail; Error message displayed
+Actual Result     Error message displayed
+Status            Pass / Fail
+Remarks           Ensure system prevents overdraft
